@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,37 @@
             font-family: Arial, Helvetica, sans-serif;
             background-image:url(FUNDO.jpg);
         }
-        nav{
-            text-align: center;
+        figure{ 
+            position: fixed ;
+            top: 10%;
+            left: 10%;
+        }
+        div{
+            position: fixed ;
+            top: 10%;
+            left: 70%;
+        }
+        button{
+    background-color: rgb(255, 101, 30);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color:rgb(233, 231, 230);
+    font-size:20px; 
         }
 </style> 
-</header>
-<nav>
-    <a href="login.html">ENTRE</a> ou
-    <a href="CADASTRO.html">CADASTRE-SE</a>
-</nav>
-</header>
 
 <body>
-
+    <div>
+        <button onclick="window.location.href = 'login.html'">ENTRAR</button>
+        <br>
+        <br>
+        <button onclick="window.location.href = 'cadastro.html'">CADASTRE-SE</button>
+    </div>
+    <figure>
+        <img src="inicio.png" width="600" height="500" >
+    </figure>
 </body>
 
 </html>
